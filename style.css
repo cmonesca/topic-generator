@@ -25,7 +25,7 @@ h1 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    padding: 3%;
+    padding: 2%;
     flex-direction: column;
 }
 
