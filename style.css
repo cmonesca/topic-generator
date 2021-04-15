@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: #f8f8f8;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -27,6 +27,7 @@ h1 {
     padding: 5%;
     text-align: center;
     flex-direction: column;
+    position: relative;
 }
 
 .topic-answer {
@@ -35,7 +36,7 @@ h1 {
 }
 
 button {
-    width: 100px;
+    width: auto;
     height: 40px;
     background-color: black;
     color: white;
@@ -44,8 +45,13 @@ button {
     margin-top: 10px;
     border: none;
     border-radius: 10px;
+    position: absolute;
+    bottom: 8%;
+    padding: 0px 30px;
 }
 
 button:active {
     background-color: gray;
+    transition: background-color 0.1s, transform 0.2s, opacity 0.2s;
+    transform: scale(0.97);
 }
