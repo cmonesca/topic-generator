@@ -1,5 +1,4 @@
 const getTopicButton = document.querySelector('.submit-button');
-const topic = document.querySelector('.topic-answer').innerHTML;
 const allTopics = [
     "With creativity, where does the tech fit in?",
     "NFTs, we just sold this panel",
@@ -12,13 +11,12 @@ const allTopics = [
     "Gaming FTW",
     "AI and Humans: underrated or overrated"
 ];
+let topic = document.querySelector('.topic-answer');
 
 getTopicButton.addEventListener('click', getTopic);
 
-function getTopic() {
-    console.log('Button was clicked.');
-}
+function getTopic() {    
+    let randomTopic = allTopics[Math.floor(Math.random() * allTopics.length)];
 
-console.log(getTopicButton);
-console.log(topic);
-console.log(allTopics);
+    topic.innerHTML = randomTopic;
+}
